@@ -1,8 +1,8 @@
 {
-  "app_version": "1.15.0",
-  "app_code": 27,
-  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.15.0/SmartControl-1.15.0-release.apk",
-  "app_sha256": "58d8c9dd06338acc3bfb92003b2c6d0e8fd70e568b3c6f85620b6df79359a9b1",
-  "app_size": 2210964,
-  "app_notes": "Stift oben im Dashboard (oder langer Druck auf eine Kachel): Kacheln antippen für Reihenfolge, Größe, Abschnitt, Name und Entfernen\nVier Größen: Drittel, Halb, Breit und Hoch (halbe Breite, doppelte Höhe – daneben stapeln sich zwei halbe Kacheln)\nAbschnitte umbenennen, verschieben, löschen und neu anlegen\nBeim Anlegen einer Kachel stehen ebenfalls alle vier Größen zur Wahl, auch für Thermostate"
+  "app_version": "1.16.0",
+  "app_code": 28,
+  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.16.0/SmartControl-1.16.0-release.apk",
+  "app_sha256": "9a91b9a3fc8e9d6a7a16c325def4940ca3b27642ca3ba5bf206ec295ab0806c7",
+  "app_size": 2227348,
+  "app_notes": "Neue Kacheln: Dimmer (Schieberegler und An/Aus), Rollladen (Hoch · Stopp · Runter), Sollwert (− und +), Farbe (Farbwahl, optional Helligkeit) und Taster/Szene\nBeim Anlegen schlägt die App den passenden Typ aus der ioBroker-Rolle vor; Grenzen und Schrittweite kommen aus ioBroker\nZugehörige Datenpunkte im selben Ordner werden erkannt, z. B. der An/Aus-Schalter zum Dimmer\nJede Regler-Kachel lässt sich auf „nur im Heimnetz bedienbar“ stellen"
 }
