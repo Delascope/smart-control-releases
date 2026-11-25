@@ -1,8 +1,8 @@
 {
-  "app_version": "1.13.1",
-  "app_code": 24,
-  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.13.1/SmartControl-1.13.1-release.apk",
-  "app_sha256": "f253381df9a67eaedbf038679d029395d80ef66e0860e68561963761fc20115d",
+  "app_version": "1.13.2",
+  "app_code": 25,
+  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.13.2/SmartControl-1.13.2-release.apk",
+  "app_sha256": "a533a8798305bd9777894af480297beda3fdd44d1b92bfbcb73f682f642bb2ca",
   "app_size": 2194580,
-  "app_notes": "Die Dünger-Kachel lässt sich wie alle anderen mit langem Druck aus dem Dashboard entfernen"
+  "app_notes": "Langer Druck auf den Dashboard-Namen: umbenennen oder das Dashboard löschen\nAuch das letzte Dashboard lässt sich löschen – danach bleibt die Startseite leer statt der Vorlage\nNeue Namen in der Vorlage: „Raumtemperatur“ und „Aquariumfilter“\nLange Kachelnamen brechen in schmalen Kacheln auf zwei Zeilen um"
 }
