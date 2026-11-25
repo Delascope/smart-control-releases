@@ -2,6 +2,16 @@
   "firmware": [],
   "app": [
     {
+      "version": "1.15.0",
+      "title": "Bearbeiten-Modus",
+      "items": [
+        "Stift oben im Dashboard (oder langer Druck auf eine Kachel): Kacheln antippen für Reihenfolge, Größe, Abschnitt, Name und Entfernen",
+        "Vier Größen: Drittel, Halb, Breit und Hoch (halbe Breite, doppelte Höhe – daneben stapeln sich zwei halbe Kacheln)",
+        "Abschnitte umbenennen, verschieben, löschen und neu anlegen",
+        "Beim Anlegen einer Kachel stehen ebenfalls alle vier Größen zur Wahl, auch für Thermostate"
+      ]
+    },
+    {
       "version": "1.14.0",
       "title": "Einlesen und Verbindungsanzeige",
       "items": [
