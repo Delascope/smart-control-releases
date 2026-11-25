@@ -1,0 +1,13 @@
+{
+  "fw_version": "4.12",
+  "fw_url": "https://github.com/Delascope/smart-control-releases/releases/download/fw-v4.12/pumpensteuerung-v4.12.bin",
+  "fw_sha256": "48e5c3b6e6ad341f8fbcb6d6e6171b943a8f6cdf7597f232265464981a8d2b07",
+  "fw_size": 1247824,
+  "fw_notes": "Eigenständiges Projekt Smart Control, abgezweigt aus der Pumpensteuerung v4.11\nOnline-Update und Download über den Rechner kommen jetzt aus dem Smart-Control-Release-Repo\nEinstellungen, Timer, Netzwerkname und MQTT-Präfix bleiben unverändert",
+  "app_version": "1.12.0",
+  "app_code": 22,
+  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.12.0/SmartControl-1.12.0-release.apk",
+  "app_sha256": "4ec1f5728831b0b4a7cfd5fbe729456574c3baff1d977914f2b9360d8ab8e298",
+  "app_size": 2111920,
+  "app_notes": "Neuer Name „Smart Control“ und eigene App-Kennung – läuft neben der bisherigen Pumpensteuerung-App\nEigener Signaturschlüssel: die App wird neu installiert, Einstellungen bitte einmal neu einrichten\nApp-Updates und Changelog kommen aus dem Smart-Control-Release-Repo"
+}
