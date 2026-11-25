@@ -1,8 +1,8 @@
 {
-  "app_version": "1.14.0",
-  "app_code": 26,
-  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.14.0/SmartControl-1.14.0-release.apk",
-  "app_sha256": "68ddee4a3cf19aaae6d8f22d9d239c6dbb08ec79e3aaf76342af36af84360502",
-  "app_size": 2194580,
-  "app_notes": "Verbindungsanzeige farbig hinterlegt: grün im Heimnetz, gelb unterwegs, rot ohne Verbindung\nEinstellungen › ioBroker & MQTT › Neu laden meldet, wie viele Datenpunkte gelesen wurden, wie viele neu sind und wie viele noch auf keinem Dashboard liegen – bei Fehlern mit Grund\nKacheln übernehmen Einheiten aus ioBroker; selbst angelegte Kacheln auch den Namen, solange er in der App nicht geändert wurde\nNeue Installation startet mit leerem Dashboard; „Vorlage verwenden“ legt Aquarium und Wohnung an. Bestehende Dashboards bleiben beim Update erhalten"
+  "app_version": "1.15.0",
+  "app_code": 27,
+  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.15.0/SmartControl-1.15.0-release.apk",
+  "app_sha256": "58d8c9dd06338acc3bfb92003b2c6d0e8fd70e568b3c6f85620b6df79359a9b1",
+  "app_size": 2210964,
+  "app_notes": "Stift oben im Dashboard (oder langer Druck auf eine Kachel): Kacheln antippen für Reihenfolge, Größe, Abschnitt, Name und Entfernen\nVier Größen: Drittel, Halb, Breit und Hoch (halbe Breite, doppelte Höhe – daneben stapeln sich zwei halbe Kacheln)\nAbschnitte umbenennen, verschieben, löschen und neu anlegen\nBeim Anlegen einer Kachel stehen ebenfalls alle vier Größen zur Wahl, auch für Thermostate"
 }
