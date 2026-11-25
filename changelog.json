@@ -1,207 +1,27 @@
 {
-  "firmware": [
-    {
-      "version": "4.12",
-      "title": "Smart Control",
-      "items": [
-        "Eigenständiges Projekt Smart Control, abgezweigt aus der Pumpensteuerung v4.11",
-        "Online-Update und Download über den Rechner kommen jetzt aus dem Smart-Control-Release-Repo",
-        "Einstellungen, Timer, Netzwerkname und MQTT-Präfix bleiben unverändert"
-      ]
-    },
-    {
-      "version": "4.11",
-      "title": "Platz für künftige Updates",
-      "items": [
-        "Firmware rund 58 KB kleiner – der Speicher ist nur noch zu 95 % statt 99 % belegt, Platz für weitere Online-Updates",
-        "Das Online-Update vertraut jetzt gezielt den Zertifikaten, die GitHub verwendet, statt einer Liste aller Zertifizierungsstellen"
-      ]
-    },
-    {
-      "version": "4.10",
-      "title": "Update auch über den Rechner",
-      "items": [
-        "Kann die Steuerung nicht selbst aktualisieren (z. B. kein Internet), bietet die Weboberfläche die Firmware zum Herunterladen auf den Rechner an",
-        "Danach wie gewohnt über „Firmware-Datei wählen“ hochladen",
-        "Auch bei gefundenem Update gibt es zusätzlich den Download-Link"
-      ]
-    },
-    {
-      "version": "4.9",
-      "title": "Online-Update",
-      "items": [
-        "Weboberfläche › System: „Nach Update suchen“ prüft, ob es eine neue Firmware gibt",
-        "„Installieren“ lädt sie aus dem Internet, prüft die Prüfsumme und startet neu – kein Datei-Hochladen mehr nötig",
-        "Fortschritt wird angezeigt, die Weboberfläche bleibt währenddessen bedienbar",
-        "Schlägt etwas fehl, bleibt die bisherige Firmware"
-      ]
-    },
-    {
-      "version": "4.8",
-      "title": "Klare Meldungen beim Dosieren",
-      "items": [
-        "PWM 0: Start wird abgelehnt mit „PWM ist ausgeschaltet“ statt „Ungültige Menge“",
-        "Reicht der Tank nicht für die Dosierung, kommt „Nicht genug im Tank“ mit Rest- und benötigter Menge",
-        "Fehlender Durchfluss wird eigens gemeldet",
-        "Gilt für Weboberfläche, App und MQTT",
-        "Klassische Weboberfläche entfernt – alte Adressen wie /config führen zur neuen Oberfläche, auch im Notfall-AP"
-      ]
-    },
-    {
-      "version": "4.7",
-      "title": "Start-Warteschlange",
-      "items": [
-        "Höchstens 1 Pumpe läuft gleichzeitig (einstellbar 1–4) – schont Netzteil und Anlaufstrom",
-        "Weitere Starts von Button, App, MQTT und Timer warten der Reihe nach, 2 s Pause zwischen zwei Starts; Wartende verfallen nach 30 min",
-        "Timer, die auf eine laufende Pumpe treffen, werden jetzt nachgeholt statt übersprungen",
-        "„Alle Pumpen stoppen“ und Failsafe leeren die Warteschlange",
-        "Persist-Log verliert keine Einträge mehr, wenn mehrere Ereignisse in einer Sekunde kommen",
-        "Timer als ein Speicherblock je Pumpe – spart rund 95 NVS-Einträge (Achtung: ein Downgrade vor v4.7 verliert die Timer)",
-        "NVS-Schreibfehler werden gezählt und gemeldet",
-        "Werksreset löscht jetzt auch Verbrauchsverlauf und Persist-Log",
-        "Weboberfläche: Tank als Glasbehälter mit Welle statt Ring, Anzeige „Wartet · Platz n“"
-      ]
-    },
-    {
-      "version": "4.6",
-      "title": "Füllstand per MQTT",
-      "items": [
-        "Füllstand anpassen aus der App wirkt jetzt auch über MQTT (lokal und extern) – das Topic …/tanklevel/set wurde bisher nicht abonniert"
-      ]
-    },
-    {
-      "version": "4.5",
-      "title": "Abmelden",
-      "items": [
-        "Abmelden in der Weboberfläche wirkt auch, wenn sich der Browser alte Zugangsdaten aus dem früheren Anmeldefenster gemerkt hat"
-      ]
-    },
-    {
-      "version": "4.4",
-      "title": "Anmeldung & Füllstand",
-      "items": [
-        "Anmeldung in der Weboberfläche per Formular statt Browser-Fenster, auf Wunsch 30 Tage angemeldet",
-        "Nach 5 falschen Passwörtern 60 s Sperre",
-        "Füllstand frei einstellbar (z. B. 460 von 1000 ml) – Weboberfläche, App und MQTT …/tanklevel/set",
-        "Klassische Ansicht mit Link zur neuen Oberfläche"
-      ]
-    },
-    {
-      "version": "4.3",
-      "title": "Neue Weboberfläche",
-      "items": [
-        "Weboberfläche im Design der App, hell und dunkel, auch am Handy",
-        "Dosieren, Timer und Einstellungen ohne Neuladen der Seite – entlastet den ESP",
-        "Seite liegt gepackt im Flash und wird vom Browser zwischengespeichert; Werte kommen immer live",
-        "Live-Log nur auf der System-Seite und nur, solange sie sichtbar ist",
-        "Firmware-Update mit Fortschrittsbalken, bisherige Ansicht weiter unter /classic",
-        "Versionsanzeige nur noch Nummer und Core-Version"
-      ]
-    },
-    {
-      "version": "4.2",
-      "title": "Einheitliche Weboberfläche",
-      "items": [
-        "Startseite und Einstellungen im selben Stil wie der Wochen-Timer, auch am Handy",
-        "„Zurücksetzen auf Werkseinstellung“ von der Startseite in die Einstellungen verschoben",
-        "Versionsanzeige mit Namen der Version und der tatsächlich laufenden Core-Version"
-      ]
-    },
-    {
-      "version": "4.1",
-      "title": "Wochen-Timer-Seite",
-      "items": [
-        "Timer-Kacheln in der Weboberfläche zentriert, passen sich der Fensterbreite an (auch am Handy)",
-        "Uhr liegt nicht mehr über der Überschrift, Überschrift und Rücklink zentriert"
-      ]
-    },
-    {
-      "version": "4.0",
-      "title": "Verbrauchsverlauf",
-      "items": [
-        "Tagesverbrauch je Pumpe der letzten 30 Tage, gespeichert nur beim Stoppen und Tageswechsel",
-        "Neue Schnittstelle /api/history, heutiger Verbrauch im Status",
-        "MQTT: <präfix>/<n>/today_ml (retained) – z. B. für Diagramme im ioBroker-History-Adapter"
-      ]
-    },
-    {
-      "version": "3.9",
-      "title": "Gerätekopplung",
-      "items": [
-        "Eindeutige Geräte-ID aus der Chip-Seriennummer, abrufbar ohne Login (/api/id)",
-        "Status meldet die MQTT-Einstellungen (ohne Passwort) zum Übernehmen in die App"
-      ]
-    },
-    {
-      "version": "3.8",
-      "title": "Weboberfläche repariert",
-      "items": [
-        "Stop-Button und Layout der Pumpenkarten wieder korrekt (HTML-Puffer war seit v3.6 zu klein)",
-        "Zu kleiner Puffer wird künftig im Live-Log gemeldet statt still abgeschnitten"
-      ]
-    },
-    {
-      "version": "3.7",
-      "title": "Dosieren unterwegs",
-      "items": [
-        "MQTT-Befehle start:<sekunden> und dose:<ml> – die App kann auch über ioBroker mit Menge oder Dauer dosieren"
-      ]
-    },
-    {
-      "version": "3.6",
-      "title": "App-Schnittstelle",
-      "items": [
-        "JSON-API für die App (Status, Timer, Log, Alle stoppen)",
-        "mDNS-Dienst: App findet die Steuerung automatisch im Netz",
-        "MQTT: Statuswerte retained, Online/Offline per Last Will, Gesamtstatus als JSON",
-        "MQTT: Befehle über …/set-Topics, kein Flash-Schreiben durch eigenes Echo",
-        "Alle Aktionen nur noch per POST – Browser-Vorladen kann nichts auslösen",
-        "Failsafe und OTA-Update sichern den Füllstand",
-        "Startseite ohne Browser-Cache, Füllstand aktualisiert sich live",
-        "Persist-Log ohne automatische Leerung (Ringpuffer, 40 Einträge)"
-      ]
-    },
-    {
-      "version": "3.5",
-      "title": "Härtung",
-      "items": [
-        "Timer-Start überschreibt die eingestellte Laufzeit nicht mehr",
-        "Füllstand wird während des Laufs jede Minute gesichert (Stromausfall)",
-        "Startsperre zählt ab Ende des Setups",
-        "Werksreset und Log löschen nur noch per POST",
-        "Namen und Log werden sicher (HTML-escaped) angezeigt"
-      ]
-    },
-    {
-      "version": "3.4",
-      "title": "ESP32 Core 3.x",
-      "items": [
-        "Umstellung auf ESP32 Arduino Core 3.x (LEDC- und Watchdog-API)",
-        "PWM 2 kHz / 8 Bit, Pumpen schalten sicher ab, egal in welchem Pin-Modus"
-      ]
-    },
-    {
-      "version": "3.3",
-      "title": "Sicherheit & WLAN",
-      "items": [
-        "Web-Login (mind. 8 Zeichen), auch für OTA-Update",
-        "Notfall-AP nach 2 min ohne WLAN, automatisch neu verbinden",
-        "mDNS: pumpensteuerung.local",
-        "Passwörter erscheinen nicht mehr im HTML"
-      ]
-    },
-    {
-      "version": "3.2",
-      "title": "Timer & MQTT",
-      "items": [
-        "Wochen-Timer driftet nicht mehr und überspringt keine Minute",
-        "Keine Timer ohne gültige NTP-Zeit, Dauer 0 startet nicht",
-        "MQTT: Füllstand max. 1×/s, eindeutige Client-ID",
-        "Deadman-Überwachung korrigiert"
-      ]
-    }
-  ],
+  "firmware": [],
   "app": [
+    {
+      "version": "1.13.1",
+      "title": "Korrektur",
+      "items": [
+        "Die Dünger-Kachel lässt sich wie alle anderen mit langem Druck aus dem Dashboard entfernen"
+      ]
+    },
+    {
+      "version": "1.13.0",
+      "title": "Dashboards",
+      "items": [
+        "Neue Startseite mit Dashboards „Aquarium“ und „Wohnung“: Werte, Schalter, Licht und CO₂ mit Zeitschaltung, Dünger-Tanks und Thermostate aus ioBroker",
+        "Thermostate: Ein/Aus, Manuell mit Soll ± oder Auto nach Heizplan, eigene Seite mit Heizplan je Raum",
+        "Kacheln selbst anlegen: Typ wählen, Datenpunkt aus ioBroker aussuchen, Name, Symbol und Größe festlegen",
+        "Unten jetzt Dashboards · Pumpen · Zeitpläne · Einstellungen – „Zeitpläne“ sammelt Pumpen-Timer, Licht & CO₂ und Heizplan",
+        "Einstellungen getrennt nach „Diese App“, „Verbindung zu Hause“ und „Pumpensteuerung“; der Changelog heißt jetzt „Neuigkeiten“",
+        "Unterwegs sind Filter, Heizstab und USB nur lesbar; geschaltet wird über den Mosquitto mit eigenem Befehls-Topic",
+        "Firmware-Hinweise und Firmware-Changelog kommen wieder aus dem Projekt „Pumpensteuerung“",
+        "Neues App-Symbol: Haus mit Tropfen"
+      ]
+    },
     {
       "version": "1.12.0",
       "title": "Smart Control",
