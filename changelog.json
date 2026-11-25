@@ -2,6 +2,16 @@
   "firmware": [],
   "app": [
     {
+      "version": "1.14.0",
+      "title": "Einlesen und Verbindungsanzeige",
+      "items": [
+        "Verbindungsanzeige farbig hinterlegt: grün im Heimnetz, gelb unterwegs, rot ohne Verbindung",
+        "Einstellungen › ioBroker & MQTT › Neu laden meldet, wie viele Datenpunkte gelesen wurden, wie viele neu sind und wie viele noch auf keinem Dashboard liegen – bei Fehlern mit Grund",
+        "Kacheln übernehmen Einheiten aus ioBroker; selbst angelegte Kacheln auch den Namen, solange er in der App nicht geändert wurde",
+        "Neue Installation startet mit leerem Dashboard; „Vorlage verwenden“ legt Aquarium und Wohnung an. Bestehende Dashboards bleiben beim Update erhalten"
+      ]
+    },
+    {
       "version": "1.13.2",
       "title": "Dashboards bearbeiten",
       "items": [
