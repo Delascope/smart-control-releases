@@ -2,6 +2,16 @@
   "firmware": [],
   "app": [
     {
+      "version": "1.16.0",
+      "title": "Regler",
+      "items": [
+        "Neue Kacheln: Dimmer (Schieberegler und An/Aus), Rollladen (Hoch · Stopp · Runter), Sollwert (− und +), Farbe (Farbwahl, optional Helligkeit) und Taster/Szene",
+        "Beim Anlegen schlägt die App den passenden Typ aus der ioBroker-Rolle vor; Grenzen und Schrittweite kommen aus ioBroker",
+        "Zugehörige Datenpunkte im selben Ordner werden erkannt, z. B. der An/Aus-Schalter zum Dimmer",
+        "Jede Regler-Kachel lässt sich auf „nur im Heimnetz bedienbar“ stellen"
+      ]
+    },
+    {
       "version": "1.15.0",
       "title": "Bearbeiten-Modus",
       "items": [
