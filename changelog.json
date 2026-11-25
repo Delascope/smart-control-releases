@@ -2,6 +2,16 @@
   "firmware": [],
   "app": [
     {
+      "version": "1.13.2",
+      "title": "Dashboards bearbeiten",
+      "items": [
+        "Langer Druck auf den Dashboard-Namen: umbenennen oder das Dashboard löschen",
+        "Auch das letzte Dashboard lässt sich löschen – danach bleibt die Startseite leer statt der Vorlage",
+        "Neue Namen in der Vorlage: „Raumtemperatur“ und „Aquariumfilter“",
+        "Lange Kachelnamen brechen in schmalen Kacheln auf zwei Zeilen um"
+      ]
+    },
+    {
       "version": "1.13.1",
       "title": "Korrektur",
       "items": [
