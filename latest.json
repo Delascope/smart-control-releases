@@ -1,8 +1,8 @@
 {
-  "app_version": "1.13.2",
-  "app_code": 25,
-  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.13.2/SmartControl-1.13.2-release.apk",
-  "app_sha256": "a533a8798305bd9777894af480297beda3fdd44d1b92bfbcb73f682f642bb2ca",
+  "app_version": "1.14.0",
+  "app_code": 26,
+  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.14.0/SmartControl-1.14.0-release.apk",
+  "app_sha256": "68ddee4a3cf19aaae6d8f22d9d239c6dbb08ec79e3aaf76342af36af84360502",
   "app_size": 2194580,
-  "app_notes": "Langer Druck auf den Dashboard-Namen: umbenennen oder das Dashboard löschen\nAuch das letzte Dashboard lässt sich löschen – danach bleibt die Startseite leer statt der Vorlage\nNeue Namen in der Vorlage: „Raumtemperatur“ und „Aquariumfilter“\nLange Kachelnamen brechen in schmalen Kacheln auf zwei Zeilen um"
+  "app_notes": "Verbindungsanzeige farbig hinterlegt: grün im Heimnetz, gelb unterwegs, rot ohne Verbindung\nEinstellungen › ioBroker & MQTT › Neu laden meldet, wie viele Datenpunkte gelesen wurden, wie viele neu sind und wie viele noch auf keinem Dashboard liegen – bei Fehlern mit Grund\nKacheln übernehmen Einheiten aus ioBroker; selbst angelegte Kacheln auch den Namen, solange er in der App nicht geändert wurde\nNeue Installation startet mit leerem Dashboard; „Vorlage verwenden“ legt Aquarium und Wohnung an. Bestehende Dashboards bleiben beim Update erhalten"
 }
