@@ -2,6 +2,19 @@
   "firmware": [],
   "app": [
     {
+      "version": "1.17.0",
+      "title": "Standorte",
+      "items": [
+        "Mehrere Standorte (z. B. Eltern, Bruder), jeder mit eigenem ioBroker, eigenen Dashboards und eigenen Namen aus ioBroker",
+        "Einstellungen › Standort › Standorte: anlegen, umbenennen, löschen, wechseln",
+        "Im Dashboard steht der Standort unter der Verbindungsanzeige; mit „Auswahl im Dashboard“ lässt er sich dort per Auswahl wechseln",
+        "Pumpensteuerung je Standort an- oder abschaltbar – ohne sie verschwinden der Reiter „Pumpen“ und die Pumpen-Einstellungen",
+        "Zugang von außen je Standort wählbar: keiner, Mosquitto mit Zertifikat oder direkt zum ioBroker (Adresse, Port, optional TLS)",
+        "Namen und Einheiten werden nach dem Wechsel automatisch neu gelesen, sobald der Standort im Heimnetz verbunden ist",
+        "Bisherige Einstellungen und Dashboards gehören zum ersten Standort"
+      ]
+    },
+    {
       "version": "1.16.0",
       "title": "Regler",
       "items": [
