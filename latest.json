@@ -1,8 +1,8 @@
 {
-  "app_version": "1.16.0",
-  "app_code": 28,
-  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.16.0/SmartControl-1.16.0-release.apk",
-  "app_sha256": "9a91b9a3fc8e9d6a7a16c325def4940ca3b27642ca3ba5bf206ec295ab0806c7",
-  "app_size": 2227348,
-  "app_notes": "Neue Kacheln: Dimmer (Schieberegler und An/Aus), Rollladen (Hoch · Stopp · Runter), Sollwert (− und +), Farbe (Farbwahl, optional Helligkeit) und Taster/Szene\nBeim Anlegen schlägt die App den passenden Typ aus der ioBroker-Rolle vor; Grenzen und Schrittweite kommen aus ioBroker\nZugehörige Datenpunkte im selben Ordner werden erkannt, z. B. der An/Aus-Schalter zum Dimmer\nJede Regler-Kachel lässt sich auf „nur im Heimnetz bedienbar“ stellen"
+  "app_version": "1.17.0",
+  "app_code": 29,
+  "app_url": "https://github.com/Delascope/smart-control-releases/releases/download/app-1.17.0/SmartControl-1.17.0-release.apk",
+  "app_sha256": "4cb2164d7bad51bbe5dc9513e46b85e5f1c2e4ab86651b2cbb249f5755420b39",
+  "app_size": 2243736,
+  "app_notes": "Mehrere Standorte (z. B. Eltern, Bruder), jeder mit eigenem ioBroker, eigenen Dashboards und eigenen Namen aus ioBroker\nEinstellungen › Standort › Standorte: anlegen, umbenennen, löschen, wechseln\nIm Dashboard steht der Standort unter der Verbindungsanzeige; mit „Auswahl im Dashboard“ lässt er sich dort per Auswahl wechseln\nPumpensteuerung je Standort an- oder abschaltbar – ohne sie verschwinden der Reiter „Pumpen“ und die Pumpen-Einstellungen\nZugang von außen je Standort wählbar: keiner, Mosquitto mit Zertifikat oder direkt zum ioBroker (Adresse, Port, optional TLS)\nNamen und Einheiten werden nach dem Wechsel automatisch neu gelesen, sobald der Standort im Heimnetz verbunden ist\nBisherige Einstellungen und Dashboards gehören zum ersten Standort"
 }
